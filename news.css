@@ -1,0 +1,604 @@
+/* =========================================================================
+   GTV News Styles v12.4
+   ========================================================================= */
+body.post-type-archive-gtv_news .content-area,
+body.post-type-archive-gtv_news .site-content {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+
+:root {
+    --gtv-purple:      #4b286d;
+    --gtv-purple-dark: #2a153d;
+    --gtv-text:        #0b0c0c;
+    --gtv-gray:        #505a5f;
+    --gtv-max:         1240px;
+    --gtv-single-max:  960px;
+    --govuk-blue:      #1d70b8;
+}
+
+.gtv-news-wrapper--single {
+    max-width: var(--gtv-single-max);
+    padding-top: 30px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #fff;
+}
+
+body.single-gtv_news #masthead {
+    background: #fff;
+}
+
+body.single-gtv_news #masthead {
+    background: #fff !important;
+}
+
+/* Archive hero */
+.gtv-news-archive-hero {
+    background-color: #F8F2FF;
+    border-bottom: 1px solid #e0d0f0;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+}
+
+/* Constrain hero on news archive */
+.post-type-archive-gtv_news .gtv-hero-breakout {
+    min-height: 0 !important;
+    padding-bottom: 30px;
+}
+
+.post-type-archive-gtv_news .gtv-hero-image-col img {
+    height: 250px;
+}
+
+/* Archive hero layout */
+.gtv-news-archive-hero {
+    background-color: #F8F2FF;
+    border-bottom: 1px solid #e0d0f0;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+}
+
+.gtv-news-archive-hero .gtv-layout-wrapper {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.gtv-news-archive-hero .gtv-hero-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.gtv-news-archive-hero .gtv-hero-content-col {
+    flex: 0 0 65%;
+    max-width: 780px;
+}
+
+.gtv-news-archive-hero .gtv-hero-image-col {
+    flex: 0 0 400px;
+    max-width: 100%;
+}
+
+.gtv-news-archive-hero .gtv-hero-image-col img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+@media (max-width: 768px) {
+    .gtv-news-archive-hero .gtv-hero-flex-container {
+        flex-direction: column;
+    }
+    .gtv-news-archive-hero .gtv-hero-image-col {
+        width: 100%;
+        flex: 1 1 auto;
+    }
+    .gtv-news-archive-hero .gtv-hero-image-col img {
+        height: auto;
+    }
+}
+
+/* =========================================================================
+   1. MAIN WRAPPER
+   ========================================================================= */
+
+.gtv-news-wrapper {
+    max-width: var(--gtv-max);
+    margin: 0 auto;
+    padding: 0 20px 80px;
+    font-family: -apple-system, sans-serif;
+    color: var(--gtv-text);
+}
+
+.gtv-news-wrapper--single {
+    max-width: var(--gtv-single-max);
+    padding-top: 30px;
+    background: #fff;
+}
+
+/* =========================================================================
+   2. PAGE BACKGROUND — grey below header, white card for content
+   ========================================================================= */
+
+body.single-gtv_news {
+    background: #fff;
+}
+
+body.single-gtv_news .site-main,
+body.single-gtv_news #primary,
+body.single-gtv_news .content-area {
+    background: #f5f5f5;
+    padding: 40px 20px;
+}
+
+body.single-gtv_news .gtv-news-wrapper--single {
+    background: #fff;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+    padding: 30px 20px 60px;
+    margin: 0 auto;
+    max-width: var(--gtv-single-max);
+}
+
+/* =========================================================================
+   3. FULL WIDTH PURPLE BANNER (single + archive)
+   Moved outside GP container via JS for true full width
+   ========================================================================= */
+
+.gtv-single-banner {
+    background: var(--gtv-purple);
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    margin-bottom: 0;
+}
+
+.gtv-single-banner__inner {
+    max-width: var(--gtv-single-max);
+    margin: 0 auto;
+}
+
+/* Archive banner — wider inner to align with card grid */
+.gtv-single-banner__inner--wide {
+    max-width: var(--gtv-max);
+}
+
+/* =========================================================================
+   4. BREADCRUMBS
+   ========================================================================= */
+
+.gtv-breadcrumbs ol {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 16px;
+}
+
+.gtv-breadcrumbs li {
+    display: flex;
+    align-items: center;
+}
+
+.gtv-breadcrumbs li + li::before {
+    content: "›";
+    margin: 0 10px;
+    color: var(--gtv-gray);
+    font-weight: bold;
+}
+
+.gtv-breadcrumbs a {
+    color: var(--govuk-blue);
+    text-decoration: underline;
+}
+
+.gtv-breadcrumbs a:hover {
+    color: #003078;
+    text-decoration-thickness: 2px;
+}
+
+/* Breadcrumbs on purple background */
+.gtv-breadcrumbs--light ol {
+    margin-bottom: 16px;
+}
+
+.gtv-breadcrumbs--light a {
+    color: #fff;
+    text-decoration: underline;
+    opacity: 0.85;
+}
+
+.gtv-breadcrumbs--light a:hover {
+    opacity: 1;
+    text-decoration-thickness: 2px;
+    color: #fff;
+}
+
+.gtv-breadcrumbs--light li + li::before {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.gtv-breadcrumbs--light span {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* =========================================================================
+   5. TITLES + BANNER META
+   ========================================================================= */
+
+.gtv-single-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--gtv-text);
+    margin: 10px 0 20px 0;
+}
+
+.gtv-single-title--light {
+    color: #fff;
+    margin: 0;
+}
+
+.gtv-banner-meta {
+    margin-top: 12px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    font-family: -apple-system, sans-serif;
+}
+
+/* =========================================================================
+   6. ARCHIVE CARD GRID
+   ========================================================================= */
+
+.gtv-archive-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.gtv-story-card {
+    border: 1px solid #ddd;
+    border-top: 5px solid var(--gtv-purple);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    background: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.gtv-story-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.gtv-story-card__image-wrap {
+    aspect-ratio: 16 / 9;
+    background: #eee;
+    overflow: hidden;
+}
+
+.gtv-story-card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gtv-story-card__body {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.gtv-story-card__title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    color: #000;
+}
+
+.gtv-story-card__title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.gtv-story-card__title a:hover {
+    text-decoration: underline;
+}
+
+.gtv-story-card__meta {
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.gtv-story-card__cta {
+    margin-top: auto;
+    color: var(--gtv-purple);
+    font-weight: bold;
+}
+
+/* =========================================================================
+   7. SINGLE — FEATURED IMAGE
+   ========================================================================= */
+
+.gtv-news-feat-img {
+    margin-bottom: 30px;
+}
+
+.gtv-news-feat-img img {
+    width: 100%;
+    height: auto;
+    border-bottom: 5px solid var(--gtv-purple);
+    display: block;
+}
+
+/* =========================================================================
+   8. SINGLE — BODY CONTENT
+   Text brought in with padding; images break out equally left and right
+   ========================================================================= */
+
+.gtv-news-body {
+    font-size: 19px;
+    line-height: 1.6;
+    padding: 0 60px;
+}
+
+.gtv-news-body p {
+    margin-bottom: 25px;
+}
+
+.gtv-news-body a {
+    color: var(--govuk-blue);
+    text-decoration: underline;
+}
+
+/* Images break out equally either side of text */
+.gtv-news-body img,
+.gtv-news-body figure,
+.gtv-news-body .wp-block-image {
+    display: block;
+    width: calc(100% + 120px);
+    margin-left: -60px;
+    margin-right: -60px;
+    max-width: none;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+
+.gtv-news-body .wp-block-image img {
+    width: 100%;
+    max-width: none;
+    display: block;
+}
+
+.gtv-news-body video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.gtv-news-body iframe {
+    max-width: 100%;
+}
+
+.wp-block-image {
+    margin-bottom: 1.5em;
+}
+
+.wp-block-image.aligncenter {
+    text-align: center;
+}
+
+/* =========================================================================
+   9. TAGS SECTION (GOV.UK labelled list style)
+   ========================================================================= */
+
+.gtv-news-divider {
+    border: none;
+    border-top: 1px solid #b1b4b6;
+    margin: 40px 0 20px;
+}
+
+.gtv-tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 8px;
+    margin: 0 0 30px;
+    padding: 0;
+}
+
+.gtv-tag-list__label {
+    font-family: -apple-system, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--gtv-purple);
+    margin-right: 4px;
+    white-space: nowrap;
+}
+
+.gtv-tag-list__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+.gtv-tag-link {
+    display: inline-block;
+    font-family: -apple-system, sans-serif;
+    font-size: 16px;
+    color: var(--gtv-purple);
+    text-decoration: underline;
+    font-weight: 600;
+    padding: 2px 0;
+}
+
+.gtv-tag-link:hover {
+    color: var(--gtv-purple-dark);
+    text-decoration-thickness: 2px;
+}
+
+.gtv-tag-link:not(:last-child)::after {
+    content: ",";
+    color: var(--gtv-text);
+    font-weight: 400;
+    margin-left: 1px;
+}
+
+/* =========================================================================
+   10. SHARE BAR (horizontal, below tags)
+   ========================================================================= */
+
+.gtv-share-bar {
+    margin-top: 10px;
+}
+
+.gtv-share-bar__inner {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 0 40px;
+}
+
+.gtv-share-heading {
+    font-family: -apple-system, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--gtv-purple);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.gtv-share-bar__buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.gtv-share-btn {
+    width: 44px;
+    height: 44px;
+    background: var(--gtv-purple);
+    color: #fff;
+    border: 2px solid var(--gtv-purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+.gtv-share-btn:hover {
+    background: var(--gtv-purple-dark);
+    border-color: var(--gtv-purple-dark);
+    color: #fff;
+}
+
+/* =========================================================================
+   11. PAGINATION
+   ========================================================================= */
+
+.gtv-pagination {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.gtv-pagination .page-numbers {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.gtv-pagination .current {
+    background: var(--gtv-purple);
+    color: #fff;
+    border-color: var(--gtv-purple);
+}
+
+/* =========================================================================
+   12. GP CONTAINER OVERRIDE
+   ========================================================================= */
+
+.site-container,
+.site-content,
+.content-area {
+    overflow-x: visible !important;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* =========================================================================
+   13. RESPONSIVE
+   ========================================================================= */
+
+@media (max-width: 900px) {
+    .gtv-archive-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .gtv-archive-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gtv-single-title {
+        font-size: 32px;
+    }
+
+    .gtv-single-banner {
+        padding: 30px 20px;
+    }
+
+    .gtv-news-body {
+        padding: 0 20px;
+    }
+
+    .gtv-news-body img,
+    .gtv-news-body figure,
+    .gtv-news-body .wp-block-image {
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .gtv-share-bar__inner {
+        flex-wrap: wrap;
+    }
+}
+
+/* =========================================================================
+   14. ACCESSIBILITY
+   ========================================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    .gtv-story-card { transition: none; }
+    .gtv-share-btn  { transition: none; }
+}
