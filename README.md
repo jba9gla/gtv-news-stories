@@ -1,4 +1,4 @@
-# GTV News System
+# Gathering The Voices News System
 
 Custom news post type and archive system for [Gathering the Voices](https://gatheringthevoices.com), built on GeneratePress with WPCode snippets.
 
